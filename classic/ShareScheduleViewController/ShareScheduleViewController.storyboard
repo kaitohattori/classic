@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Share Schedule View Controller-->
+        <scene sceneID="0OY-rw-k5Z">
+            <objects>
+                <viewController storyboardIdentifier="ShareScheduleViewController" id="yxP-Uu-BE0" customClass="ShareScheduleViewController" customModule="toyohashi_class_management" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jV7-No-KtE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yka-SL-hIT">
+                                <rect key="frame" x="87.5" y="273.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="VeQ-T9-nDV"/>
+                                    <constraint firstAttribute="width" secondItem="Yka-SL-hIT" secondAttribute="height" multiplier="1:1" id="wxr-a3-TBK"/>
+                                </constraints>
+                                <state key="normal" title="share" image="ShareScheduleVC_share"/>
+                                <connections>
+                                    <action selector="shareClicked:" destination="yxP-Uu-BE0" eventType="touchUpInside" id="Y3c-Lt-Da4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaH-kg-Ism">
+                                <rect key="frame" x="305" y="20" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TaH-kg-Ism" secondAttribute="height" multiplier="1:1" id="CTl-Tf-F6A"/>
+                                    <constraint firstAttribute="width" constant="60" id="lrZ-t5-3E2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="0.98823529409999999" green="0.30980392159999998" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneClicked:" destination="yxP-Uu-BE0" eventType="touchUpInside" id="rRf-0s-XKL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share Schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyf-mc-cdu">
+                                <rect key="frame" x="15" y="90" width="292" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Eyf-mc-cdu" firstAttribute="leading" secondItem="8jQ-vo-4xZ" secondAttribute="leading" constant="15" id="0Bs-UL-ul7"/>
+                            <constraint firstItem="Yka-SL-hIT" firstAttribute="centerX" secondItem="jV7-No-KtE" secondAttribute="centerX" id="T2m-le-cg8"/>
+                            <constraint firstItem="Yka-SL-hIT" firstAttribute="centerY" secondItem="jV7-No-KtE" secondAttribute="centerY" constant="40" id="WQ1-Sl-J9b"/>
+                            <constraint firstItem="8jQ-vo-4xZ" firstAttribute="trailing" secondItem="TaH-kg-Ism" secondAttribute="trailing" constant="10" id="Yxl-aS-kU2"/>
+                            <constraint firstItem="TaH-kg-Ism" firstAttribute="top" secondItem="8jQ-vo-4xZ" secondAttribute="top" id="beX-xy-V7j"/>
+                            <constraint firstItem="Eyf-mc-cdu" firstAttribute="top" secondItem="8jQ-vo-4xZ" secondAttribute="top" constant="70" id="wIK-LH-W96"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8jQ-vo-4xZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wzt-ET-8zx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="185" y="162"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ShareScheduleVC_share" width="200" height="200"/>
+    </resources>
+</document>

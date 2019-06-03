@@ -1,0 +1,412 @@
+{
+  "Wed" : {
+    "7" : {
+      "classRoom" : "",
+      "className" : "実験",
+      "color" : {
+        "red" : 204,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 51
+      }
+    },
+    "3" : {
+      "classRoom" : "",
+      "className" : "",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 255
+      }
+    },
+    "8" : {
+      "classRoom" : "",
+      "className" : "実験",
+      "color" : {
+        "red" : 204,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 51
+      }
+    },
+    "4" : {
+      "classRoom" : "",
+      "className" : "",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 255
+      }
+    },
+    "5" : {
+      "classRoom" : "",
+      "className" : "実験",
+      "color" : {
+        "red" : 204,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 51
+      }
+    },
+    "1" : {
+      "classRoom" : "",
+      "className" : "理科",
+      "color" : {
+        "red" : 102,
+        "alpha" : 255,
+        "blue" : 51,
+        "green" : 216
+      }
+    },
+    "6" : {
+      "classRoom" : "",
+      "className" : "実験",
+      "color" : {
+        "red" : 204,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 51
+      }
+    },
+    "2" : {
+      "classRoom" : "",
+      "className" : "理科",
+      "color" : {
+        "red" : 102,
+        "alpha" : 255,
+        "blue" : 51,
+        "green" : 216
+      }
+    }
+  },
+  "Mon" : {
+    "7" : {
+      "classRoom" : "",
+      "className" : "",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 255
+      }
+    },
+    "3" : {
+      "classRoom" : "",
+      "className" : "数学1",
+      "color" : {
+        "red" : 51,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 153
+      }
+    },
+    "8" : {
+      "classRoom" : "",
+      "className" : "",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 255
+      }
+    },
+    "4" : {
+      "classRoom" : "",
+      "className" : "数学1",
+      "color" : {
+        "red" : 51,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 153
+      }
+    },
+    "5" : {
+      "classRoom" : "",
+      "className" : "理科",
+      "color" : {
+        "red" : 102,
+        "alpha" : 255,
+        "blue" : 51,
+        "green" : 216
+      }
+    },
+    "1" : {
+      "classRoom" : "",
+      "className" : "国語",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 51,
+        "green" : 89
+      }
+    },
+    "6" : {
+      "classRoom" : "",
+      "className" : "理科",
+      "color" : {
+        "red" : 102,
+        "alpha" : 255,
+        "blue" : 51,
+        "green" : 216
+      }
+    },
+    "2" : {
+      "classRoom" : "",
+      "className" : "国語",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 51,
+        "green" : 89
+      }
+    }
+  },
+  "Thu" : {
+    "7" : {
+      "classRoom" : "",
+      "className" : "",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 255
+      }
+    },
+    "3" : {
+      "classRoom" : "",
+      "className" : "英語",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 51,
+        "green" : 204
+      }
+    },
+    "8" : {
+      "classRoom" : "",
+      "className" : "",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 255
+      }
+    },
+    "4" : {
+      "classRoom" : "",
+      "className" : "英語",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 51,
+        "green" : 204
+      }
+    },
+    "5" : {
+      "classRoom" : "",
+      "className" : "",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 255
+      }
+    },
+    "1" : {
+      "classRoom" : "",
+      "className" : "社会",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 51,
+        "green" : 153
+      }
+    },
+    "6" : {
+      "classRoom" : "",
+      "className" : "",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 255
+      }
+    },
+    "2" : {
+      "classRoom" : "",
+      "className" : "社会",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 51,
+        "green" : 153
+      }
+    }
+  },
+  "Tue" : {
+    "7" : {
+      "classRoom" : "",
+      "className" : "数学2",
+      "color" : {
+        "red" : 51,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 153
+      }
+    },
+    "3" : {
+      "classRoom" : "",
+      "className" : "社会",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 51,
+        "green" : 153
+      }
+    },
+    "8" : {
+      "classRoom" : "",
+      "className" : "数学2",
+      "color" : {
+        "red" : 51,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 153
+      }
+    },
+    "4" : {
+      "classRoom" : "",
+      "className" : "社会",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 51,
+        "green" : 153
+      }
+    },
+    "5" : {
+      "classRoom" : "",
+      "className" : "プログラミング",
+      "color" : {
+        "red" : 153,
+        "alpha" : 255,
+        "blue" : 153,
+        "green" : 153
+      }
+    },
+    "1" : {
+      "classRoom" : "",
+      "className" : "",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 255
+      }
+    },
+    "6" : {
+      "classRoom" : "",
+      "className" : "プログラミング",
+      "color" : {
+        "red" : 153,
+        "alpha" : 255,
+        "blue" : 153,
+        "green" : 153
+      }
+    },
+    "2" : {
+      "classRoom" : "",
+      "className" : "",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 255
+      }
+    }
+  },
+  "Fri" : {
+    "2" : {
+      "classRoom" : "",
+      "className" : "数学2",
+      "color" : {
+        "red" : 51,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 153
+      }
+    },
+    "1" : {
+      "classRoom" : "",
+      "className" : "数学2",
+      "color" : {
+        "red" : 51,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 153
+      }
+    },
+    "8" : {
+      "classRoom" : "",
+      "className" : "",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 255
+      }
+    },
+    "6" : {
+      "classRoom" : "",
+      "className" : "国語",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 51,
+        "green" : 89
+      }
+    },
+    "3" : {
+      "classRoom" : "",
+      "className" : "",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 255
+      }
+    },
+    "4" : {
+      "classRoom" : "",
+      "className" : "",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 255,
+        "green" : 255
+      }
+    },
+    "7" : {
+      "classRoom" : "",
+      "className" : "HR",
+      "color" : {
+        "green" : 0,
+        "alpha" : 255,
+        "red" : 0,
+        "blue" : 0
+      }
+    },
+    "5" : {
+      "classRoom" : "",
+      "className" : "国語",
+      "color" : {
+        "red" : 255,
+        "alpha" : 255,
+        "blue" : 51,
+        "green" : 89
+      }
+    }
+  }
+}

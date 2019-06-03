@@ -1,0 +1,16 @@
+
+/* Class = "UILabel"; text = "Share Schedule"; ObjectID = "6Qp-Op-Ny6"; */
+"6Qp-Op-Ny6.text" = "Share Schedule";
+
+/* Class = "UILabel"; text = "シェアする側"; ObjectID = "T7h-t9-icI"; */
+"T7h-t9-icI.text" = "シェアする側";
+
+/* Class = "UILabel"; text = "❶ シェアしてもらう人の端末で　　\nSetting > Schedule Share を開きます。\n\n❷ シェアボタンを押し、AirDropでこの端末を選択します。"; ObjectID = "vVn-n1-7fB"; */
+"vVn-n1-7fB.text" = "❶ シェアしてもらう人の端末で　　\nSetting > Schedule Share を開きます。\n\n❷ シェアボタンを押し、AirDropでこの端末を選択します。";
+
+/* Class = "UILabel"; text = "シェアされる側（この端末）"; ObjectID = "tya-8g-ocd"; */
+"tya-8g-ocd.text" = "シェアされる側（この端末）";
+
+/* Class = "UILabel"; text = "❶ シェアされたファイルをこのアプリで開きます。"; ObjectID = "1kO-NN-dRn"; */
+"1kO-NN-dRn.text" = "❶ シェアされたファイルをこのアプリで開きます。";
+

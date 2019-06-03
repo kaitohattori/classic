@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ControlViewView" customModule="toyohashi_class_management" customModuleProvider="target">
+            <connections>
+                <outlet property="monthView" destination="iFA-Pp-UZR" id="5XU-6d-aOY"/>
+                <outlet property="selectBar" destination="HiB-dH-wts" id="xIg-Qq-FU5"/>
+                <outlet property="weekView" destination="Ine-5c-gun" id="I4a-Ke-04P"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ine-5c-gun">
+                    <rect key="frame" x="10" y="10" width="145" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0W-Dk-omw">
+                            <rect key="frame" x="47" y="3" width="53" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="G0W-Dk-omw" firstAttribute="centerX" secondItem="Ine-5c-gun" secondAttribute="centerX" id="2Py-mP-n7U"/>
+                        <constraint firstItem="G0W-Dk-omw" firstAttribute="centerY" secondItem="Ine-5c-gun" secondAttribute="centerY" id="AfR-lR-A1g"/>
+                        <constraint firstAttribute="height" constant="30" id="XWR-ss-YDp"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="iwy-DM-xc7" appends="YES" id="JCz-NO-Hgg"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFA-Pp-UZR">
+                    <rect key="frame" x="165" y="10" width="145" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTW-Z5-V0n">
+                            <rect key="frame" x="42.5" y="3" width="61" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="KTW-Z5-V0n" firstAttribute="centerX" secondItem="iFA-Pp-UZR" secondAttribute="centerX" id="92q-KP-LFZ"/>
+                        <constraint firstAttribute="height" constant="30" id="EqR-qw-xKF"/>
+                        <constraint firstItem="KTW-Z5-V0n" firstAttribute="centerY" secondItem="iFA-Pp-UZR" secondAttribute="centerY" id="G3b-ql-Mgr"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="fvm-uA-gXG" appends="YES" id="EUA-nT-5KV"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HiB-dH-wts">
+                    <rect key="frame" x="165" y="41" width="145" height="2"/>
+                    <color key="backgroundColor" red="0.98823529409999999" green="0.30980392159999998" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="lRd-yZ-uV3"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAp-yu-N0U">
+                    <rect key="frame" x="320" y="5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="eAp-yu-N0U" secondAttribute="height" multiplier="1:1" id="MZa-jj-z5B"/>
+                        <constraint firstAttribute="width" constant="40" id="nQL-xA-kKo"/>
+                    </constraints>
+                    <state key="normal" title="setting" image="ControlView_setting"/>
+                    <connections>
+                        <action selector="settingClicked:" destination="-1" eventType="touchUpInside" id="G6P-vW-hOa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eAp-yu-N0U" firstAttribute="leading" secondItem="iFA-Pp-UZR" secondAttribute="trailing" constant="10" id="7Vo-ZF-WyV"/>
+                <constraint firstItem="iFA-Pp-UZR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Bgy-w6-goW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eAp-yu-N0U" secondAttribute="trailing" constant="15" id="Fzn-uF-JYK"/>
+                <constraint firstItem="HiB-dH-wts" firstAttribute="trailing" secondItem="iFA-Pp-UZR" secondAttribute="trailing" id="Hac-4H-Wfh"/>
+                <constraint firstItem="HiB-dH-wts" firstAttribute="leading" secondItem="iFA-Pp-UZR" secondAttribute="leading" id="LBO-iH-4qc"/>
+                <constraint firstItem="iFA-Pp-UZR" firstAttribute="width" secondItem="Ine-5c-gun" secondAttribute="width" id="LSn-wH-eGa"/>
+                <constraint firstItem="HiB-dH-wts" firstAttribute="top" secondItem="iFA-Pp-UZR" secondAttribute="bottom" constant="1" id="LgW-bB-oOa"/>
+                <constraint firstItem="eAp-yu-N0U" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="SMg-gU-4Jr"/>
+                <constraint firstItem="iFA-Pp-UZR" firstAttribute="leading" secondItem="Ine-5c-gun" secondAttribute="trailing" constant="10" id="VRJ-5W-8Jz"/>
+                <constraint firstItem="Ine-5c-gun" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bo5-H8-meY"/>
+                <constraint firstItem="HiB-dH-wts" firstAttribute="width" secondItem="iFA-Pp-UZR" secondAttribute="width" id="rIc-sp-g1l"/>
+                <constraint firstItem="Ine-5c-gun" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="ugz-yb-gIA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="32.5" y="38"/>
+        </view>
+        <tapGestureRecognizer id="iwy-DM-xc7">
+            <connections>
+                <action selector="weekClicked:" destination="-1" id="TwN-Ga-d9N"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="fvm-uA-gXG">
+            <connections>
+                <action selector="monthClicked:" destination="-1" id="W73-7q-Bjx"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="ControlView_setting" width="50" height="50"/>
+    </resources>
+</document>

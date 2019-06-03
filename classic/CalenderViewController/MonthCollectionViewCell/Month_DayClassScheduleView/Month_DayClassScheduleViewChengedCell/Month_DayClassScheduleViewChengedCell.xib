@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Fed-c7-5l6" customClass="Month_DayClassScheduleViewChengedCell" customModule="toyohashi_class_management" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="49" height="174"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="49" height="174"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KDj-Qv-fZa">
+                        <rect key="frame" x="3" y="3" width="43" height="168"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Month_DayClassScheduleVCC_stripe" translatesAutoresizingMaskIntoConstraints="NO" id="23s-uy-YTR">
+                                <rect key="frame" x="0.0" y="31" width="43" height="137"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsZ-xh-coe">
+                                <rect key="frame" x="0.0" y="0.0" width="43" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IL-hK-49E">
+                                        <rect key="frame" x="17.5" y="14" width="8.5" height="16.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.98823529409999999" green="0.30980392159999998" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="変更後" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrV-6b-8DS">
+                                        <rect key="frame" x="0.0" y="2" width="43" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="AER-yS-1KU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="10"/>
+                                        <color key="textColor" red="0.98823529409999999" green="0.30980392159999998" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="VrV-6b-8DS" firstAttribute="leading" secondItem="hsZ-xh-coe" secondAttribute="leading" id="4R8-LT-eQU"/>
+                                    <constraint firstAttribute="bottom" secondItem="6IL-hK-49E" secondAttribute="bottom" id="7tt-Rv-jLU"/>
+                                    <constraint firstItem="6IL-hK-49E" firstAttribute="top" secondItem="VrV-6b-8DS" secondAttribute="bottom" id="9kw-Jb-Ksc"/>
+                                    <constraint firstAttribute="trailing" secondItem="VrV-6b-8DS" secondAttribute="trailing" id="MI2-NM-Q1F"/>
+                                    <constraint firstItem="VrV-6b-8DS" firstAttribute="top" secondItem="hsZ-xh-coe" secondAttribute="top" constant="2" id="Tkl-vG-PgN"/>
+                                    <constraint firstItem="6IL-hK-49E" firstAttribute="centerX" secondItem="hsZ-xh-coe" secondAttribute="centerX" id="X16-kW-5bI"/>
+                                    <constraint firstAttribute="height" constant="31" id="c58-ub-1hQ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="デジタル制御" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLl-QP-w0X">
+                                <rect key="frame" x="0.0" y="31" width="43" height="137"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.30980392159999998" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hsZ-xh-coe" firstAttribute="leading" secondItem="KDj-Qv-fZa" secondAttribute="leading" id="2HH-L7-FNX"/>
+                            <constraint firstItem="kLl-QP-w0X" firstAttribute="leading" secondItem="KDj-Qv-fZa" secondAttribute="leading" id="3Bs-xe-n2w"/>
+                            <constraint firstItem="23s-uy-YTR" firstAttribute="leading" secondItem="KDj-Qv-fZa" secondAttribute="leading" id="6a9-8F-ML1"/>
+                            <constraint firstAttribute="trailing" secondItem="23s-uy-YTR" secondAttribute="trailing" id="8Kc-Cb-Ly3"/>
+                            <constraint firstAttribute="bottom" secondItem="23s-uy-YTR" secondAttribute="bottom" id="DGb-yI-Lvz"/>
+                            <constraint firstItem="kLl-QP-w0X" firstAttribute="top" secondItem="hsZ-xh-coe" secondAttribute="bottom" id="EYl-zz-4S7"/>
+                            <constraint firstAttribute="bottom" secondItem="kLl-QP-w0X" secondAttribute="bottom" id="HGS-nM-tXX"/>
+                            <constraint firstAttribute="trailing" secondItem="kLl-QP-w0X" secondAttribute="trailing" id="O6e-qF-cWP"/>
+                            <constraint firstItem="23s-uy-YTR" firstAttribute="top" secondItem="hsZ-xh-coe" secondAttribute="bottom" id="Ou8-2d-NDQ"/>
+                            <constraint firstItem="hsZ-xh-coe" firstAttribute="top" secondItem="KDj-Qv-fZa" secondAttribute="top" id="Vnf-wQ-ZTe"/>
+                            <constraint firstAttribute="trailing" secondItem="hsZ-xh-coe" secondAttribute="trailing" id="bLX-GR-7oq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="KDj-Qv-fZa" firstAttribute="top" secondItem="Fed-c7-5l6" secondAttribute="top" constant="3" id="BbN-fZ-zRB"/>
+                <constraint firstAttribute="trailing" secondItem="KDj-Qv-fZa" secondAttribute="trailing" constant="3" id="E2T-2G-A5A"/>
+                <constraint firstItem="KDj-Qv-fZa" firstAttribute="leading" secondItem="Fed-c7-5l6" secondAttribute="leading" constant="3" id="Tjq-9X-tJ3"/>
+                <constraint firstAttribute="bottom" secondItem="KDj-Qv-fZa" secondAttribute="bottom" constant="3" id="yV4-EP-Gzt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Wyw-hm-7ZD"/>
+            <size key="customSize" width="49" height="174"/>
+            <connections>
+                <outlet property="classNameLabel" destination="kLl-QP-w0X" id="lkj-9u-A8W"/>
+                <outlet property="classNumberLabel" destination="6IL-hK-49E" id="I8E-tv-pi4"/>
+                <outlet property="classTypeLabel" destination="VrV-6b-8DS" id="zcQ-p3-GT7"/>
+                <outlet property="colorView" destination="KDj-Qv-fZa" id="hVy-nM-XFe"/>
+            </connections>
+            <point key="canvasLocation" x="-105.5" y="68"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Month_DayClassScheduleVCC_stripe" width="150" height="150"/>
+    </resources>
+</document>

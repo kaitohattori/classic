@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Month-->
+        <scene sceneID="Sb9-ZD-TcN">
+            <objects>
+                <viewController storyboardIdentifier="CalenderViewController" id="Myp-xI-9dT" customClass="CalenderViewController" customModule="toyohashi_class_management" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aK5-zm-hSx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P5g-ow-6J2">
+                                <rect key="frame" x="0.0" y="94" width="375" height="619"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="MZE-zu-dLf">
+                                    <size key="itemSize" width="351" height="643"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uga-Wr-kZf" customClass="ControlViewView" customModule="toyohashi_class_management" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="375" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dSg-zs-QIT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ban-wZ-UJX" customClass="AdMobView" customModule="toyohashi_class_management" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="718" width="375" height="60"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="AEZ-Ul-KrT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JcO-g6-YTh" firstAttribute="bottom" secondItem="ban-wZ-UJX" secondAttribute="bottom" id="0R0-hr-cSw"/>
+                            <constraint firstItem="P5g-ow-6J2" firstAttribute="leading" secondItem="JcO-g6-YTh" secondAttribute="leading" id="CoY-ZT-vC5"/>
+                            <constraint firstItem="Uga-Wr-kZf" firstAttribute="top" secondItem="JcO-g6-YTh" secondAttribute="top" id="ai2-zp-TCX"/>
+                            <constraint firstItem="Uga-Wr-kZf" firstAttribute="leading" secondItem="JcO-g6-YTh" secondAttribute="leading" id="g9J-kU-viU"/>
+                            <constraint firstItem="ban-wZ-UJX" firstAttribute="top" secondItem="P5g-ow-6J2" secondAttribute="bottom" constant="5" id="hAe-fH-m67"/>
+                            <constraint firstItem="ban-wZ-UJX" firstAttribute="leading" secondItem="JcO-g6-YTh" secondAttribute="leading" id="i13-WX-4PJ"/>
+                            <constraint firstItem="P5g-ow-6J2" firstAttribute="trailing" secondItem="JcO-g6-YTh" secondAttribute="trailing" id="nyE-14-NP6"/>
+                            <constraint firstItem="P5g-ow-6J2" firstAttribute="top" secondItem="Uga-Wr-kZf" secondAttribute="bottom" id="oFN-rk-YFv"/>
+                            <constraint firstItem="JcO-g6-YTh" firstAttribute="trailing" secondItem="ban-wZ-UJX" secondAttribute="trailing" id="syh-bo-4r1"/>
+                            <constraint firstItem="JcO-g6-YTh" firstAttribute="trailing" secondItem="Uga-Wr-kZf" secondAttribute="trailing" id="uBk-X2-8ua"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JcO-g6-YTh"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Month" largeTitleDisplayMode="always" id="tSe-aO-TCy"/>
+                    <connections>
+                        <outlet property="adMobView" destination="ban-wZ-UJX" id="lhs-Gf-aBc"/>
+                        <outlet property="controlViewView" destination="Uga-Wr-kZf" id="0kd-uL-Mjf"/>
+                        <outlet property="monthCollectionView" destination="P5g-ow-6J2" id="VMG-Jf-p8f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UfX-oc-yUk" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1165.5999999999999" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+</document>

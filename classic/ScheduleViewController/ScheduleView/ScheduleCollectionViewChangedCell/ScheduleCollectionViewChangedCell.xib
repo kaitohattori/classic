@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dBV-3o-g89" customClass="ScheduleCollectionViewChangedCell" customModule="toyohashi_class_management" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="87" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="87" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1py-e5-G2T">
+                        <rect key="frame" x="3" y="3" width="81" height="70"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScheduleCollectionViewCC_stripe" translatesAutoresizingMaskIntoConstraints="NO" id="nS5-7I-gI0">
+                                <rect key="frame" x="0.0" y="0.0" width="81" height="70"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="デジタル制御" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OpK-QF-jUa">
+                                <rect key="frame" x="3" y="18" width="75" height="52"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="変更後" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxW-12-Ueo">
+                                <rect key="frame" x="3" y="2" width="75" height="16"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="p1o-s8-H47"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" red="0.98823529409999999" green="0.30980392159999998" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.30980392159999998" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OpK-QF-jUa" firstAttribute="top" secondItem="WxW-12-Ueo" secondAttribute="bottom" id="AM1-Y5-J8B"/>
+                            <constraint firstItem="nS5-7I-gI0" firstAttribute="top" secondItem="1py-e5-G2T" secondAttribute="top" id="EEc-Qq-zW4"/>
+                            <constraint firstItem="WxW-12-Ueo" firstAttribute="leading" secondItem="1py-e5-G2T" secondAttribute="leading" constant="3" id="NP9-fi-ogr"/>
+                            <constraint firstAttribute="trailing" secondItem="OpK-QF-jUa" secondAttribute="trailing" constant="3" id="PXN-Rf-vSB"/>
+                            <constraint firstItem="nS5-7I-gI0" firstAttribute="leading" secondItem="1py-e5-G2T" secondAttribute="leading" id="PfN-Ka-Puw"/>
+                            <constraint firstAttribute="trailing" secondItem="WxW-12-Ueo" secondAttribute="trailing" constant="3" id="V1c-nU-Tbw"/>
+                            <constraint firstAttribute="bottom" secondItem="nS5-7I-gI0" secondAttribute="bottom" id="Y4w-bn-fTi"/>
+                            <constraint firstAttribute="trailing" secondItem="nS5-7I-gI0" secondAttribute="trailing" id="Zlf-gL-gVT"/>
+                            <constraint firstItem="OpK-QF-jUa" firstAttribute="leading" secondItem="1py-e5-G2T" secondAttribute="leading" constant="3" id="aSU-W2-JES"/>
+                            <constraint firstAttribute="bottom" secondItem="OpK-QF-jUa" secondAttribute="bottom" id="gre-aF-WhG"/>
+                            <constraint firstItem="WxW-12-Ueo" firstAttribute="top" secondItem="1py-e5-G2T" secondAttribute="top" constant="2" id="zEE-VF-0P1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1py-e5-G2T" firstAttribute="top" secondItem="dBV-3o-g89" secondAttribute="top" constant="3" id="HHy-rB-Snk"/>
+                <constraint firstAttribute="trailing" secondItem="1py-e5-G2T" secondAttribute="trailing" constant="3" id="XH8-HU-9QX"/>
+                <constraint firstItem="1py-e5-G2T" firstAttribute="leading" secondItem="dBV-3o-g89" secondAttribute="leading" constant="3" id="l4z-BG-yjf"/>
+                <constraint firstAttribute="bottom" secondItem="1py-e5-G2T" secondAttribute="bottom" constant="3" id="z0J-tx-V1p"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="B61-gV-pJR"/>
+            <size key="customSize" width="87" height="76"/>
+            <connections>
+                <outlet property="classNameLabel" destination="OpK-QF-jUa" id="0UM-ba-stV"/>
+                <outlet property="classTypeLabel" destination="WxW-12-Ueo" id="qjo-7r-SEV"/>
+                <outlet property="colorView" destination="1py-e5-G2T" id="CDt-Lq-arg"/>
+            </connections>
+            <point key="canvasLocation" x="-86.5" y="65"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ScheduleCollectionViewCC_stripe" width="150" height="150"/>
+    </resources>
+</document>

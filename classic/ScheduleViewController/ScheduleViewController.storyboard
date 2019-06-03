@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Schedule View Controller-->
+        <scene sceneID="OEd-ol-KXQ">
+            <objects>
+                <viewController storyboardIdentifier="ScheduleViewController" id="s3p-Ha-DzJ" customClass="ScheduleViewController" customModule="toyohashi_class_management" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zoW-Ok-JkQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euT-fi-Pxp">
+                                <rect key="frame" x="15" y="94" width="191.66666666666666" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1wb-vn-uRY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Nc-ct-82a" customClass="ControlViewView" customModule="toyohashi_class_management" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="375" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wsb-dj-rVd"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqd-Y8-4hX" customClass="AdMobView" customModule="toyohashi_class_management" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="718" width="375" height="60"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="zwI-2V-VGr"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CYl-6P-PXz" customClass="ScheduleDotwView" customModule="toyohashi_class_management" customModuleProvider="target">
+                                <rect key="frame" x="5" y="154" width="365" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7IN-L7-UW5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wsE-z3-Fom" customClass="ScheduleView" customModule="toyohashi_class_management" customModuleProvider="target">
+                                <rect key="frame" x="5" y="204" width="365" height="514"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wsE-z3-Fom" firstAttribute="top" secondItem="CYl-6P-PXz" secondAttribute="bottom" id="0Rw-uo-H5G"/>
+                            <constraint firstItem="uqd-Y8-4hX" firstAttribute="bottom" secondItem="Gki-CZ-1H4" secondAttribute="bottom" id="2W9-8D-TIH"/>
+                            <constraint firstItem="8Nc-ct-82a" firstAttribute="top" secondItem="Gki-CZ-1H4" secondAttribute="top" id="44h-uE-lQw"/>
+                            <constraint firstItem="Gki-CZ-1H4" firstAttribute="trailing" secondItem="wsE-z3-Fom" secondAttribute="trailing" constant="5" id="GEM-gn-2Fn"/>
+                            <constraint firstItem="Gki-CZ-1H4" firstAttribute="trailing" secondItem="8Nc-ct-82a" secondAttribute="trailing" id="PMh-3X-KJE"/>
+                            <constraint firstItem="euT-fi-Pxp" firstAttribute="top" secondItem="8Nc-ct-82a" secondAttribute="bottom" id="XTo-rt-LO7"/>
+                            <constraint firstItem="Gki-CZ-1H4" firstAttribute="trailing" secondItem="CYl-6P-PXz" secondAttribute="trailing" constant="5" id="Zxk-vA-XAi"/>
+                            <constraint firstItem="CYl-6P-PXz" firstAttribute="leading" secondItem="Gki-CZ-1H4" secondAttribute="leading" constant="5" id="bEI-Iw-5Gr"/>
+                            <constraint firstItem="euT-fi-Pxp" firstAttribute="leading" secondItem="Gki-CZ-1H4" secondAttribute="leading" constant="15" id="dyr-kd-hPg"/>
+                            <constraint firstItem="8Nc-ct-82a" firstAttribute="leading" secondItem="Gki-CZ-1H4" secondAttribute="leading" id="hTL-gY-RJY"/>
+                            <constraint firstItem="CYl-6P-PXz" firstAttribute="top" secondItem="euT-fi-Pxp" secondAttribute="bottom" id="tCt-1e-ugC"/>
+                            <constraint firstItem="Gki-CZ-1H4" firstAttribute="trailing" secondItem="uqd-Y8-4hX" secondAttribute="trailing" id="w8J-Fy-oLk"/>
+                            <constraint firstItem="uqd-Y8-4hX" firstAttribute="top" secondItem="wsE-z3-Fom" secondAttribute="bottom" id="xv8-xh-bT5"/>
+                            <constraint firstItem="wsE-z3-Fom" firstAttribute="leading" secondItem="Gki-CZ-1H4" secondAttribute="leading" constant="5" id="yRs-fw-q6p"/>
+                            <constraint firstItem="uqd-Y8-4hX" firstAttribute="leading" secondItem="Gki-CZ-1H4" secondAttribute="leading" id="yf4-GR-mWW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gki-CZ-1H4"/>
+                    </view>
+                    <connections>
+                        <outlet property="adMobView" destination="uqd-Y8-4hX" id="yyO-df-8hn"/>
+                        <outlet property="controlViewView" destination="8Nc-ct-82a" id="1fl-BO-edk"/>
+                        <outlet property="scheduleDotwView" destination="CYl-6P-PXz" id="MYm-Z0-OYM"/>
+                        <outlet property="scheduleView" destination="wsE-z3-Fom" id="LBw-Jn-H4i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BZt-eG-62r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.599999999999994" y="115.59220389805098"/>
+        </scene>
+    </scenes>
+</document>

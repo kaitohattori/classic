@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First Mail Load View Controller-->
+        <scene sceneID="aGF-Hg-m8U">
+            <objects>
+                <viewController storyboardIdentifier="FirstMailLoadViewController" id="bAm-MI-ZEg" customClass="FirstMailLoadViewController" customModule="toyohashi_class_management" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LLn-9G-WJe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FirstMailLoadVC_Mail" translatesAutoresizingMaskIntoConstraints="NO" id="cUg-Zd-kDz">
+                                <rect key="frame" x="112" y="218.5" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cUg-Zd-kDz" secondAttribute="height" multiplier="1:1" id="lKm-iF-Qap"/>
+                                    <constraint firstAttribute="width" constant="150" id="w1T-Cd-wj0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preparing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enk-a0-kN9">
+                                <rect key="frame" x="165.5" y="408.5" width="84" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FirstMailLoadVC_Load" translatesAutoresizingMaskIntoConstraints="NO" id="4vM-yw-Fxy">
+                                <rect key="frame" x="95.5" y="395.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="8sg-f1-wbz"/>
+                                    <constraint firstAttribute="width" secondItem="4vM-yw-Fxy" secondAttribute="height" multiplier="1:1" id="UeD-wZ-T7f"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="enk-a0-kN9" firstAttribute="centerY" secondItem="4vM-yw-Fxy" secondAttribute="centerY" id="2YZ-H0-4tI"/>
+                            <constraint firstItem="cUg-Zd-kDz" firstAttribute="centerX" secondItem="LLn-9G-WJe" secondAttribute="centerX" id="2y9-qf-aIb"/>
+                            <constraint firstItem="enk-a0-kN9" firstAttribute="centerX" secondItem="LLn-9G-WJe" secondAttribute="centerX" constant="20" id="Owu-ER-0Cf"/>
+                            <constraint firstItem="cUg-Zd-kDz" firstAttribute="centerY" secondItem="LLn-9G-WJe" secondAttribute="centerY" constant="-40" id="dOK-pe-rtZ"/>
+                            <constraint firstItem="enk-a0-kN9" firstAttribute="top" secondItem="cUg-Zd-kDz" secondAttribute="bottom" constant="40" id="gM3-pc-I2k"/>
+                            <constraint firstItem="enk-a0-kN9" firstAttribute="leading" secondItem="4vM-yw-Fxy" secondAttribute="trailing" constant="20" id="khU-7s-Hdo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ycd-Eh-PQ6"/>
+                    </view>
+                    <connections>
+                        <outlet property="loadImageView" destination="4vM-yw-Fxy" id="wBn-Sb-Pt5"/>
+                        <outlet property="loadStateLabel" destination="enk-a0-kN9" id="T1y-7d-SYw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cd4-pE-dQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="398" y="113"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FirstMailLoadVC_Load" width="50" height="50"/>
+        <image name="FirstMailLoadVC_Mail" width="150" height="107"/>
+    </resources>
+</document>

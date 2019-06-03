@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Cec-EL-EOB" customClass="MonthCollectionViewCell" customModule="toyohashi_class_management" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="697"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="426" height="697"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="awz-p2-IS5">
+                        <rect key="frame" x="0.0" y="60" width="426" height="511"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Fkk-dd-rpe">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="April" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWs-pM-Cui">
+                        <rect key="frame" x="15" y="0.0" width="87.5" height="60"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="8Wj-5h-qSK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RvD-bv-LJZ">
+                        <rect key="frame" x="112.5" y="0.0" width="90" height="60"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                        <color key="textColor" red="1" green="0.055194377776743964" blue="0.04871089034168985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kAo-bw-tAL" userLabel="Line View">
+                        <rect key="frame" x="0.0" y="576" width="426" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ixi-Kw-DbV"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeY-Ln-Gcz">
+                        <rect key="frame" x="0.0" y="0.0" width="426" height="60"/>
+                        <connections>
+                            <action selector="showThisMonthClicked:" destination="Cec-EL-EOB" eventType="touchUpInside" id="D3c-Zz-0JP"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q3b-a3-oXn" customClass="Month_DayClassScheduleView" customModule="toyohashi_class_management" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="577" width="426" height="120"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="39Z-Gr-Cui"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="awz-p2-IS5" firstAttribute="top" secondItem="WWs-pM-Cui" secondAttribute="bottom" id="0is-8A-HIs"/>
+                <constraint firstItem="awz-p2-IS5" firstAttribute="leading" secondItem="Cec-EL-EOB" secondAttribute="leading" id="1O8-j1-MSu"/>
+                <constraint firstItem="awz-p2-IS5" firstAttribute="top" secondItem="RvD-bv-LJZ" secondAttribute="bottom" id="8uz-K7-f9z"/>
+                <constraint firstItem="qeY-Ln-Gcz" firstAttribute="leading" secondItem="Cec-EL-EOB" secondAttribute="leading" id="Dsb-JL-CDL"/>
+                <constraint firstAttribute="trailing" secondItem="kAo-bw-tAL" secondAttribute="trailing" id="KYk-oh-Ml7"/>
+                <constraint firstItem="kAo-bw-tAL" firstAttribute="leading" secondItem="Cec-EL-EOB" secondAttribute="leading" id="LpS-iM-rr4"/>
+                <constraint firstItem="Q3b-a3-oXn" firstAttribute="leading" secondItem="Cec-EL-EOB" secondAttribute="leading" id="PS8-zw-GVv"/>
+                <constraint firstItem="WWs-pM-Cui" firstAttribute="leading" secondItem="Cec-EL-EOB" secondAttribute="leading" constant="15" id="Rj5-F5-a6I"/>
+                <constraint firstItem="WWs-pM-Cui" firstAttribute="top" secondItem="Cec-EL-EOB" secondAttribute="top" id="Rvp-WL-geh"/>
+                <constraint firstAttribute="bottom" secondItem="Q3b-a3-oXn" secondAttribute="bottom" id="Shz-4W-I70"/>
+                <constraint firstAttribute="trailing" secondItem="qeY-Ln-Gcz" secondAttribute="trailing" id="XKH-dc-tyC"/>
+                <constraint firstItem="RvD-bv-LJZ" firstAttribute="top" secondItem="Cec-EL-EOB" secondAttribute="top" id="gE3-Pr-dh7"/>
+                <constraint firstItem="RvD-bv-LJZ" firstAttribute="leading" secondItem="WWs-pM-Cui" secondAttribute="trailing" constant="10" id="oMY-ev-suf"/>
+                <constraint firstItem="awz-p2-IS5" firstAttribute="top" secondItem="qeY-Ln-Gcz" secondAttribute="bottom" id="oMb-nV-fA7"/>
+                <constraint firstItem="qeY-Ln-Gcz" firstAttribute="top" secondItem="Cec-EL-EOB" secondAttribute="top" id="rTu-vS-bNK"/>
+                <constraint firstItem="kAo-bw-tAL" firstAttribute="top" secondItem="awz-p2-IS5" secondAttribute="bottom" constant="5" id="sn5-KD-0aj"/>
+                <constraint firstAttribute="trailing" secondItem="awz-p2-IS5" secondAttribute="trailing" id="uPb-HS-wOE"/>
+                <constraint firstAttribute="trailing" secondItem="Q3b-a3-oXn" secondAttribute="trailing" id="uwS-zQ-weu"/>
+                <constraint firstItem="Q3b-a3-oXn" firstAttribute="top" secondItem="kAo-bw-tAL" secondAttribute="bottom" id="xmw-Ya-m1e"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="zjz-dw-o5Y"/>
+            <size key="customSize" width="426" height="697"/>
+            <connections>
+                <outlet property="dayClassScheduleView" destination="Q3b-a3-oXn" id="IAz-vQ-sMs"/>
+                <outlet property="dayCollectionView" destination="awz-p2-IS5" id="Uk7-9p-KOa"/>
+                <outlet property="monthLabel" destination="WWs-pM-Cui" id="6D6-6Q-78z"/>
+                <outlet property="yearLabel" destination="RvD-bv-LJZ" id="R2M-x0-Wf2"/>
+            </connections>
+            <point key="canvasLocation" x="-83" y="-188.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

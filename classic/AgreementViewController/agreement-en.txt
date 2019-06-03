@@ -1,0 +1,5 @@
+1. Trouble
+ We are not responsible for any troubles with using this application.
+
+2. About treatment of acquired mail
+ This application will retrieve mail from the logged in account. Because the acquired mail is saved in this application, it will not be used by developers illegally.

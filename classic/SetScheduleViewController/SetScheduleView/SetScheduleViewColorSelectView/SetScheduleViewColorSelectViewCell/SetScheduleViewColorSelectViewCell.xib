@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XdF-SQ-bX1" customClass="SetScheduleViewColorSelectViewCell" customModule="toyohashi_class_management" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZRh-e8-pHU">
+                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZA-uD-ZXH">
+                        <rect key="frame" x="3" y="3" width="24" height="24"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.62745098040000002" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ZRh-e8-pHU" firstAttribute="top" secondItem="XdF-SQ-bX1" secondAttribute="top" id="0hg-CF-LKD"/>
+                <constraint firstItem="rZA-uD-ZXH" firstAttribute="top" secondItem="XdF-SQ-bX1" secondAttribute="top" constant="3" id="2Tk-mC-bY1"/>
+                <constraint firstItem="rZA-uD-ZXH" firstAttribute="leading" secondItem="XdF-SQ-bX1" secondAttribute="leading" constant="3" id="7lM-mY-A0u"/>
+                <constraint firstAttribute="trailing" secondItem="ZRh-e8-pHU" secondAttribute="trailing" id="O7C-R2-44c"/>
+                <constraint firstAttribute="bottom" secondItem="ZRh-e8-pHU" secondAttribute="bottom" id="S3z-iP-OZ9"/>
+                <constraint firstItem="ZRh-e8-pHU" firstAttribute="leading" secondItem="XdF-SQ-bX1" secondAttribute="leading" id="VJV-5l-6uF"/>
+                <constraint firstAttribute="trailing" secondItem="rZA-uD-ZXH" secondAttribute="trailing" constant="3" id="dgA-s9-deV"/>
+                <constraint firstAttribute="bottom" secondItem="rZA-uD-ZXH" secondAttribute="bottom" constant="3" id="ysH-D4-WW1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="9T7-sg-qFE"/>
+            <connections>
+                <outlet property="colorView" destination="rZA-uD-ZXH" id="vQR-O3-u5J"/>
+                <outlet property="selectedBorderView" destination="ZRh-e8-pHU" id="cU4-SB-g41"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="58.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
